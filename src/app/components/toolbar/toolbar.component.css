@@ -1,17 +1,8 @@
-.spacer {
-  flex: 1;
-}
-
-.toolbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  background-color: #1f212c;
-  color: white;
-  font-weight: 600;
-  padding: 0 16px;
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  border: 0;
+  outline: none;
+  box-shadow: none;
 }

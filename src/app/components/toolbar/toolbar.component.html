@@ -1,16 +1,61 @@
-<div class="toolbar" role="banner">
-    <img height="45" alt="Logo Arg Programa" src="../../../assets/logo-argPrograma.png" />
-    <div class="spacer"></div>
-    <!-- Login -->
-    <div>
-        <button type="button" class="btn text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
-                <path fill-rule="evenodd"
-                    d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
-            </svg> Login
-        </button>
+<header class="header py-3">
+    <nav class="navbar navbar-dark bg-transparent navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand"><img height="45" alt="Logo Arg Programa"
+                    src="../../../assets/logo-argPrograma.png" />
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Hello</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered rounded">
+        <div class="modal-content bg-dark text-white text-center p-5">
+            <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+            <p class="text-white-50 mb-5">Please enter your login and password!</p>
+            <form>
+                <div class="form-floating mb-3 text-primary">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
     </div>
 </div>
