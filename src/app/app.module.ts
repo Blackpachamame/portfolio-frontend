@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { RedesComponent } from './components/redes/redes.component';
+import { BienvenidaComponent } from './components/bienvenida/bienvenida.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     ProyectosComponent,
-    RedesComponent
+    RedesComponent,
+    BienvenidaComponent
   ],
   imports: [
     BrowserModule,
