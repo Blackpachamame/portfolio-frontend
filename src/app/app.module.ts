@@ -7,6 +7,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { RedesComponent } from './components/redes/redes.component';
 import { BienvenidaComponent } from './components/bienvenida/bienvenida.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BienvenidaComponent } from './components/bienvenida/bienvenida.componen
     ToolbarComponent,
     ProyectosComponent,
     RedesComponent,
-    BienvenidaComponent
+    BienvenidaComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
