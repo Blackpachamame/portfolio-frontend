@@ -9,6 +9,8 @@
 
 body {
   font-family: "Archivo", sans-serif;
+  color: white;
+  background-color: rgb(18, 18, 26);
 }
 
 .header {
@@ -33,7 +35,7 @@ body {
   left: 0;
   right: 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(assets/womanPC.jpg);
+    url(assets/banner-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
