@@ -13,52 +13,28 @@ body {
   background-color: rgb(18, 18, 26);
 }
 
-.header {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 10;
+h2 {
+  /* text-transform: uppercase; */
+  letter-spacing: 0.1rem;
+  font-weight: 700;
 }
 
-.hello {
-  width: 100%;
-  min-height: 100vh;
-  text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 50%);
-  position: relative;
+.bg-dark {
+  background-color: rgb(10 10 12) !important;
 }
 
-.bg-cover {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(assets/banner-bg.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+.text-bg-dark {
+  background-color: rgb(10 10 12) !important;
 }
 
-.title {
-  z-index: 1;
+#educacion,
+#skills,
+#proyectos,
+#redes {
+  margin-bottom: 4rem;
 }
 
-.hello .title p {
-  color: springgreen;
-  font-size: 24px;
-  line-height: 1.2;
-  cursor: pointer;
-}
-
-.hello .title p:hover .tooltiptext {
-  visibility: visible;
-  display: inline-block;
-}
-
-.hello .title p .tooltiptext {
-  visibility: hidden;
-  display: none;
-  color: coral;
+.btn-edit {
+  width: 30px;
+  height: 30px;
 }

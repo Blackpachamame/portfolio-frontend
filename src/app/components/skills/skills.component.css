@@ -1,64 +1,11 @@
 #skills {
   position: relative;
-  min-height: 300px;
+  margin-top: -30px;
 }
 
-.skills {
-  position: absolute;
-  border-radius: 2rem;
-  top: -60px;
-  left: 0;
-  right: 0;
+.container-skills {
   background-color: rgb(10 10 12);
   border: 1px solid rgb(91 175 255);
+  border-radius: 2rem;
   box-shadow: 0 0 20px rgb(91 175 255);
-}
-
-.ski {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-
-.outer {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  padding: 20px;
-}
-
-.inner {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  box-shadow: 0 0 20px rgb(91 175 255);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#number {
-  font-weight: 600;
-  color: #555;
-}
-
-circle {
-  fill: none;
-  stroke: url(#GradientColor);
-  stroke-width: 20px;
-  stroke-dasharray: 472;
-  stroke-dashoffset: 472;
-  animation: anim 2s linear forwards;
-}
-
-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-@keyframes anim {
-  100% {
-    stroke-dashoffset: 165;
-  }
 }
