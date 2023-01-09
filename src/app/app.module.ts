@@ -12,6 +12,7 @@ import { BtnEditComponent } from './components/btn-edit/btn-edit.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { BtnUpComponent } from './components/btn-up/btn-up.component';
+import { BtnAddComponent } from './component/btn-add/btn-add.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BtnUpComponent } from './components/btn-up/btn-up.component';
     BtnEditComponent,
     SkillsComponent,
     EducacionComponent,
-    BtnUpComponent
+    BtnUpComponent,
+    BtnAddComponent
   ],
   imports: [
     BrowserModule,
