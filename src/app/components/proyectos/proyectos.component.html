@@ -1,7 +1,7 @@
 <section id="proyectos" class="container">
     <div class="position-relative">
         <h2 name="proyectos" class="text-center text-decoration-underline mb-3">Proyectos</h2>
-        <app-btn-add class="position-absolute"></app-btn-add>
+        <app-btn-add class="position-absolute" data-bs-toggle="modal" data-bs-target="#proyectoModal"></app-btn-add>
     </div>
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
@@ -39,3 +39,23 @@
         </div>
     </div>
 </section>
+
+<!-- Modal -->
+<div class="modal fade" id="proyectoModal" tabindex="-1" aria-labelledby="proyectoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered rounded">
+        <div class="modal-content bg-dark text-white text-center p-5">
+            <h4 class="fw-bold mb-2 text-uppercase">Agregar proyecto</h4>
+            <form class="row justify-content-center g-3">
+                <div class="gap-2">
+                    <label for="formFile" class="form-label">Seleccionar imagen</label>
+                    <input class="form-control" type="file" id="formFile">
+
+                    <label for="formGroupExampleInput" class="form-label">Nombre del proyecto</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput"
+                        placeholder="Example input placeholder">
+                </div>
+                <button type="submit" class="col-3 btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
