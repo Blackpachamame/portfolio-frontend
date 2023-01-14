@@ -2,7 +2,7 @@
     <div class="container-skills p-2 pb-4 p-md-5 row gx-4 gy-2">
         <div class="position-relative">
             <h2 name="skills" class="text-center text-decoration-underline mb-4 mt-4 mt-md-0">Skills</h2>
-            <app-btn-add class="position-absolute"></app-btn-add>
+            <app-btn-add class="position-absolute" data-bs-toggle="modal" data-bs-target="#skillModal"></app-btn-add>
         </div>
 
         <div class="mb-3 col-12 col-md-6">
@@ -66,3 +66,23 @@
         </div>
     </div>
 </section>
+
+<!-- Modal -->
+<div class="modal fade" id="skillModal" tabindex="-1" aria-labelledby="skillModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered rounded">
+        <div class="modal-content bg-dark text-white text-center p-5">
+            <h4 class="fw-bold mb-2 text-uppercase">Agregar proyecto</h4>
+            <form class="row justify-content-center g-3">
+                <div class="gap-2">
+                    <label for="formFile" class="form-label">Seleccionar imagen</label>
+                    <input class="form-control" type="file" id="formFile">
+
+                    <label for="formGroupExampleInput" class="form-label">Nombre del proyecto</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput"
+                        placeholder="Example input placeholder">
+                </div>
+                <button type="submit" class="col-3 btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
