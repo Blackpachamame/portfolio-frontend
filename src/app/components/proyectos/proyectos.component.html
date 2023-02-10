@@ -6,8 +6,7 @@
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
             <div class="card text-bg-dark position-relative">
-                <button class="btn btn-warning btn-sm btn-edit position-absolute" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"><i class="bi bi-pencil-fill"></i></button>
+                <app-btn-edit-delete-proyecto class="position-absolute"></app-btn-edit-delete-proyecto>
                 <img src="https://raw.githubusercontent.com/Blackpachamame/Blackpachamame.github.io/main/desafíos-frontendmentor/four-card-feature-section/design/desktop-preview.jpg"
                     class="card-img-top" alt="...">
                 <div class="card-body">
@@ -17,8 +16,7 @@
         </div>
         <div class="col">
             <div class="card text-bg-dark position-relative">
-                <button class="btn btn-warning btn-sm btn-edit position-absolute" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"><i class="bi bi-pencil-fill"></i></button>
+                <app-btn-edit-delete-proyecto class="position-absolute"></app-btn-edit-delete-proyecto>
                 <img src="https://raw.githubusercontent.com/Blackpachamame/Blackpachamame.github.io/main/desafíos-frontendmentor/four-card-feature-section/design/desktop-preview.jpg"
                     class="card-img-top" alt="...">
                 <div class="card-body">
@@ -28,8 +26,7 @@
         </div>
         <div class="col">
             <div class="card text-bg-dark position-relative">
-                <button class="btn btn-warning btn-sm btn-edit position-absolute" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"><i class="bi bi-pencil-fill"></i></button>
+                <app-btn-edit-delete-proyecto class="position-absolute"></app-btn-edit-delete-proyecto>
                 <img src="https://raw.githubusercontent.com/Blackpachamame/Blackpachamame.github.io/main/desafíos-frontendmentor/four-card-feature-section/design/desktop-preview.jpg"
                     class="card-img-top" alt="...">
                 <div class="card-body">
@@ -39,23 +36,3 @@
         </div>
     </div>
 </section>
-
-<!-- Modal -->
-<div class="modal fade" id="proyectoModal" tabindex="-1" aria-labelledby="proyectoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered rounded">
-        <div class="modal-content bg-dark text-white text-center p-5">
-            <h4 class="fw-bold mb-2 text-uppercase">Agregar proyecto</h4>
-            <form class="row justify-content-center g-3">
-                <div class="gap-2">
-                    <label for="formFile" class="form-label">Seleccionar imagen previa</label>
-                    <input class="form-control" type="file" id="formFile">
-
-                    <label for="formNameProyect" class="form-label">Nombre del proyecto</label>
-                    <input type="text" class="form-control" id="formNameProyect"
-                        placeholder="Example input placeholder">
-                </div>
-                <button type="submit" class="col-3 btn btn-primary">Enviar</button>
-            </form>
-        </div>
-    </div>
-</div>

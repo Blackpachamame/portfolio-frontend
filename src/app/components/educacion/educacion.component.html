@@ -17,7 +17,7 @@
                                 additional content. This content is a little bit longer.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="card-text mb-0"><small class="text-muted">2019 - 2022</small></p>
-                                <app-btn-edit></app-btn-edit>
+                                <app-btn-edit-delete-educacion></app-btn-edit-delete-educacion>
                             </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                                 additional content. This content is a little bit longer.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="card-text mb-0"><small class="text-muted">2019 - 2022</small></p>
-                                <app-btn-edit></app-btn-edit>
+                                <app-btn-edit-delete-educacion></app-btn-edit-delete-educacion>
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                                 additional content. This content is a little bit longer.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="card-text mb-0"><small class="text-muted">2019 - 2022</small></p>
-                                <app-btn-edit></app-btn-edit>
+                                <app-btn-edit-delete-educacion></app-btn-edit-delete-educacion>
                             </div>
                         </div>
                     </div>
@@ -66,41 +66,3 @@
         </div>
     </div>
 </section>
-
-<!-- Modal -->
-<div class="modal fade" id="educacionModal" tabindex="-1" aria-labelledby="educacionModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered rounded">
-        <div class="modal-content bg-dark text-white text-center p-5">
-            <h4 class="fw-bold mb-2 text-uppercase">Agregar educación</h4>
-            <form class="row justify-content-center g-3">
-                <div class="gap-2">
-                    <label for="formFile" class="form-label">Seleccionar imagen</label>
-                    <input class="form-control" type="file" id="formFile">
-
-                    <label for="formNameEstablecimiento" class="form-label">Nombre establecimiento</label>
-                    <input type="text" class="form-control" id="formNameEstablecimiento"
-                        placeholder="Example input placeholder">
-
-                    <label for="formDescripcion" class="form-label">Descripción del título</label>
-                    <input type="text" class="form-control" id="formDescripcion"
-                        placeholder="Another input placeholder">
-
-                    <select class="form-select" aria-label="Seleccionar año inicio">
-                        <option selected>Seleccionar año de inicio</option>
-                        <option value="1">2021</option>
-                        <option value="2">2022</option>
-                        <option value="3">2023</option>
-                    </select>
-
-                    <select class="form-select" aria-label="Seleccionar año fin">
-                        <option selected>Seleccionar año de finalización</option>
-                        <option value="1">2021</option>
-                        <option value="2">2022</option>
-                        <option value="3">2023</option>
-                    </select>
-                </div>
-                <button type="submit" class="col-3 btn btn-primary">Enviar</button>
-            </form>
-        </div>
-    </div>
-</div>

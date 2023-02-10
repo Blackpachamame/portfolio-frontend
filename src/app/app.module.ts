@@ -8,11 +8,13 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { RedesComponent } from './components/redes/redes.component';
 import { BienvenidaComponent } from './components/bienvenida/bienvenida.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { BtnEditComponent } from './components/btn-edit/btn-edit.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { BtnUpComponent } from './components/btn-up/btn-up.component';
 import { BtnAddComponent } from './components/btn-add/btn-add.component';
+import { BtnEditDeleteEducacionComponent } from './components/educacion/btn-edit-delete-educacion/btn-edit-delete-educacion.component';
+import { BtnEditDeleteSkillComponent } from './components/skills/btn-edit-delete-skill/btn-edit-delete-skill.component';
+import { BtnEditDeleteProyectoComponent } from './components/proyectos/btn-edit-delete-proyecto/btn-edit-delete-proyecto.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { BtnAddComponent } from './components/btn-add/btn-add.component';
     RedesComponent,
     BienvenidaComponent,
     FooterComponent,
-    BtnEditComponent,
     SkillsComponent,
     EducacionComponent,
     BtnUpComponent,
-    BtnAddComponent
+    BtnAddComponent,
+    BtnEditDeleteEducacionComponent,
+    BtnEditDeleteSkillComponent,
+    BtnEditDeleteProyectoComponent
   ],
   imports: [
     BrowserModule,
