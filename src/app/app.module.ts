@@ -15,6 +15,9 @@ import { BtnAddComponent } from './components/btn-add/btn-add.component';
 import { BtnEditDeleteEducacionComponent } from './components/educacion/btn-edit-delete-educacion/btn-edit-delete-educacion.component';
 import { BtnEditDeleteSkillComponent } from './components/skills/btn-edit-delete-skill/btn-edit-delete-skill.component';
 import { BtnEditDeleteProyectoComponent } from './components/proyectos/btn-edit-delete-proyecto/btn-edit-delete-proyecto.component';
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { BtnEditDeleteProyectoComponent } from './components/proyectos/btn-edit-
     BtnAddComponent,
     BtnEditDeleteEducacionComponent,
     BtnEditDeleteSkillComponent,
-    BtnEditDeleteProyectoComponent
+    BtnEditDeleteProyectoComponent,
+    PagenotfoundComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
