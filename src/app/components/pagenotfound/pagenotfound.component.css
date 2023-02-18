@@ -1,0 +1,14 @@
+.img-error {
+  box-shadow: 0 0 20px rgb(91 175 255);
+  width: 126px;
+  height: 126px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-error img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
