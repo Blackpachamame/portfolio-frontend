@@ -6,7 +6,7 @@
             <form #f="ngForm" (ngSubmit)="onLogin()" class="row justify-content-center g-3" novalidate>
                 <div class="form-floating text-primary">
                     <input type="email" class="form-control" id="nombreUsuario" name="nombreUsuario"
-                        placeholder="name@example.com" (ngModel)]="nombreUsuario" required>
+                        placeholder="name@example.com" [(ngModel)]="nombreUsuario" required>
                     <label for="nombreUsuario">Email</label>
                 </div>
                 <div class="form-floating text-primary">
