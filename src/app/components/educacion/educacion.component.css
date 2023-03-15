@@ -2,6 +2,11 @@
   max-width: 200px;
 }
 
+.card.position-relative > button.position-absolute {
+  bottom: 5px;
+  right: 5px;
+}
+
 .position-relative > .position-absolute {
   top: 5px;
   right: 5px;

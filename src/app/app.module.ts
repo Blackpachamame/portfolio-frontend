@@ -12,7 +12,6 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { BtnUpComponent } from './components/btn-up/btn-up.component';
 import { BtnAddComponent } from './components/btn-add/btn-add.component';
-import { BtnEditDeleteEducacionComponent } from './components/educacion/btn-edit-delete-educacion/btn-edit-delete-educacion.component';
 import { BtnEditDeleteSkillComponent } from './components/skills/btn-edit-delete-skill/btn-edit-delete-skill.component';
 import { BtnEditDeleteProyectoComponent } from './components/proyectos/btn-edit-delete-proyecto/btn-edit-delete-proyecto.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
@@ -24,6 +23,8 @@ import { interceptorProvider } from './service/interceptor-service';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { NewEducacionComponent } from './components/educacion/new-educacion.component';
+import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,6 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
     EducacionComponent,
     BtnUpComponent,
     BtnAddComponent,
-    BtnEditDeleteEducacionComponent,
     BtnEditDeleteSkillComponent,
     BtnEditDeleteProyectoComponent,
     PagenotfoundComponent,
@@ -45,7 +45,9 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
     LoginComponent,
     ExperienciaComponent,
     NewExperienciaComponent,
-    EditExperienciaComponent
+    EditExperienciaComponent,
+    NewEducacionComponent,
+    EditEducacionComponent
   ],
   imports: [
     BrowserModule,
