@@ -1,0 +1,15 @@
+<div class="container text-center" *ngIf="acercaDe">
+    <div class="row justify-content-center align-items-center vh-100">
+        <div class="col-lg-5 col-md-6 col-12 bg-dark text-white text-center rounded p-5">
+            <h4 class="fw-bold mb-2 text-uppercase">Editar Acerca De</h4>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="descripcionE">Descripción</label>
+                    <input type="text" class="form-control" id="descripcionE" name="descripcionE"
+                        [(ngModel)]="acercaDe.descripcion" required>
+                </div>
+                <button class="btn btn-primary">Editar</button>
+            </form>
+        </div>
+    </div>
+</div>

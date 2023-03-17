@@ -1,0 +1,20 @@
+<div class="container text-center" *ngIf="skill">
+    <div class="row justify-content-center align-items-center vh-100">
+        <div class="col-lg-5 col-md-6 col-12 bg-dark text-white text-center rounded p-5">
+            <h4 class="fw-bold mb-2 text-uppercase">Agregar Skill</h4>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre de la institución</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="skill.nombre"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="porcentaje">Descripción del título</label>
+                    <input type="number" class="form-control" id="porcentaje" name="porcentaje"
+                        [(ngModel)]="skill.porcentaje" required>
+                </div>
+                <button class="btn btn-primary">Editar</button>
+            </form>
+        </div>
+    </div>
+</div>
