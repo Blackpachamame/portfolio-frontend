@@ -12,7 +12,6 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { BtnUpComponent } from './components/btn-up/btn-up.component';
 import { BtnAddComponent } from './components/btn-add/btn-add.component';
-import { BtnEditDeleteProyectoComponent } from './components/proyectos/btn-edit-delete-proyecto/btn-edit-delete-proyecto.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
@@ -28,6 +27,8 @@ import { EditSkillComponent } from './components/skills/edit-skill.component';
 import { NewSkillComponent } from './components/skills/new-skill.component';
 import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
+import { NewProyectoComponent } from './components/proyectos/new-proyecto.component';
+import { EditProyectoComponent } from './components/proyectos/edit-proyecto.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,6 @@ import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
     EducacionComponent,
     BtnUpComponent,
     BtnAddComponent,
-    BtnEditDeleteProyectoComponent,
     PagenotfoundComponent,
     HomeComponent,
     LoginComponent,
@@ -53,7 +53,9 @@ import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
     EditSkillComponent,
     NewSkillComponent,
     EditAcercaDeComponent,
-    AcercaDeComponent
+    AcercaDeComponent,
+    NewProyectoComponent,
+    EditProyectoComponent
   ],
   imports: [
     BrowserModule,

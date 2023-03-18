@@ -8,6 +8,8 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { EditProyectoComponent } from './components/proyectos/edit-proyecto.component';
+import { NewProyectoComponent } from './components/proyectos/new-proyecto.component';
 import { EditSkillComponent } from './components/skills/edit-skill.component';
 import { NewSkillComponent } from './components/skills/new-skill.component';
 
@@ -20,6 +22,8 @@ const routes: Routes = [
   { path: 'editedu/:id', component: EditEducacionComponent },
   { path: 'nuevaskill', component: NewSkillComponent },
   { path: 'editskill/:id', component: EditSkillComponent },
+  { path: 'nuevoproyecto', component: NewProyectoComponent },
+  { path: 'editproyecto/:id', component: EditProyectoComponent },
   { path: 'editacerca/:id', component: EditAcercaDeComponent },
   { path: '**', component: PagenotfoundComponent }
 ];

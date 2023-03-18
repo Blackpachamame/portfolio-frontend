@@ -1,0 +1,5 @@
+h4 {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-color: rgba(255, 193, 7, 0.5);
+}
