@@ -20,7 +20,7 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Hola</a>
+                            <a class="nav-link" href="#acercaDe">Acerca De</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#skills">Skills</a>
@@ -32,13 +32,13 @@
                             <a class="nav-link" href="#proyectos">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <button type="button" class="btn btn-outline-light" (click)="login()"
-                                *ngIf="!isLogged">Ingreso</button>
+                            <a class="nav-link" href="#experiencia">Experiencia</a>
                         </li>
                         <li class="nav-item">
-
-                            <button type="button" class="btn btn-outline-light" (click)="onLogOut()"
-                                *ngIf="isLogged">Cerrar Sesión</button>
+                            <a class="nav-link" routerLink="/login" *ngIf="!isLogged">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesión</a>
                         </li>
                     </ul>
                 </div>

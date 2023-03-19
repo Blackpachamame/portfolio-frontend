@@ -56,5 +56,5 @@
 #hello .title p .tooltiptext {
   visibility: hidden;
   display: none;
-  color: coral;
+  color: #ffc107;
 }

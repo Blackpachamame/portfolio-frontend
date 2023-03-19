@@ -6,14 +6,12 @@
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" class="row justify-content-center g-3">
                 <!-- <label for="imagenP" class="form-label">Seleccionar imagen previa</label>
                     <input class="form-control" type="file" id="imagenP"> -->
-
-                <div class="p-0">
+                <div class="col-12 col-md-10 p-0">
                     <label class="form-label" for="nombre">Nombre</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="proyecto.nombre"
                         required>
                 </div>
-
-                <div class="p-0">
+                <div class="col-12 col-md-10 p-0">
                     <label class="form-label" for="descripcion">Descripción</label>
                     <textarea class="form-control" id="descripcion" name="descripcion"
                         [(ngModel)]="proyecto.descripcion" required></textarea>

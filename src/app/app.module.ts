@@ -11,7 +11,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { BtnUpComponent } from './components/btn-up/btn-up.component';
-import { BtnAddComponent } from './components/btn-add/btn-add.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
@@ -41,7 +40,6 @@ import { EditProyectoComponent } from './components/proyectos/edit-proyecto.comp
     SkillsComponent,
     EducacionComponent,
     BtnUpComponent,
-    BtnAddComponent,
     PagenotfoundComponent,
     HomeComponent,
     LoginComponent,
