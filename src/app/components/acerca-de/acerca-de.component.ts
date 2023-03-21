@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AcercaDe } from 'src/app/model/acerca-de';
-import { AcercaDeService } from 'src/app/service/acerca-de.service';
+import { Persona } from 'src/app/model/persona.model';
+import { PersonaService } from 'src/app/service/persona.service';
 import { TokenService } from 'src/app/service/token.service';
 
 @Component({
@@ -9,13 +9,14 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./acerca-de.component.css']
 })
 export class AcercaDeComponent implements OnInit {
+  persona: Persona = null;
 
-  acercade: AcercaDe[] = [];
-  constructor(private acercaDeS: AcercaDeService, private tokenService: TokenService) { }
+  constructor(public personaS: PersonaService, private tokenService: TokenService) { }
+
   isLogged = false;
 
   ngOnInit(): void {
-    this.cargarAcercaDe();
+    this.cargarPersona();
     if (this.tokenService.getToken()) {
       this.isLogged = true;
     } else {
@@ -23,10 +24,16 @@ export class AcercaDeComponent implements OnInit {
     }
   }
 
-  cargarAcercaDe(): void {
-    this.acercaDeS.lista().subscribe(
+  cargarPersona() {
+    this.persona = {
+      nombre: '-',
+      apellido: '-',
+      descripcion: '-',
+      img: '-'
+    };
+    this.personaS.detail(1).subscribe(
       data => {
-        this.acercade = data;
+        this.persona = data;
       }
     )
   }

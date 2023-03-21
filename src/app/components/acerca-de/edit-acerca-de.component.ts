@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { AcercaDe } from 'src/app/model/acerca-de';
-import { AcercaDeService } from 'src/app/service/acerca-de.service';
+import { Persona } from 'src/app/model/persona.model';
+import { PersonaService } from 'src/app/service/persona.service';
 
 @Component({
   selector: 'app-edit-acerca-de',
@@ -10,19 +10,19 @@ import { AcercaDeService } from 'src/app/service/acerca-de.service';
 })
 export class EditAcercaDeComponent implements OnInit {
 
-  acercaDe: AcercaDe = null;
+  persona: Persona = null;
 
   constructor(
-    private acercaDeS: AcercaDeService,
+    private personaS: PersonaService,
     private activatedRouter: ActivatedRoute,
     private router: Router
   ) { }
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.acercaDeS.detail(id).subscribe(
+    this.personaS.detail(id).subscribe(
       data => {
-        this.acercaDe = data;
+        this.persona = data;
       }, err => {
         alert("Error al modificar");
         this.router.navigate(['']);
@@ -32,7 +32,7 @@ export class EditAcercaDeComponent implements OnInit {
 
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.acercaDeS.update(id, this.acercaDe).subscribe(
+    this.personaS.update(id, this.persona).subscribe(
       data => {
         this.router.navigate(['']);
       }, err => {
