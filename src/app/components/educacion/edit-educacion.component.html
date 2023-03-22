@@ -14,6 +14,32 @@
                     <textarea class="form-control" id="descripcionE" name="descripcionE"
                         [(ngModel)]="educacion.descripcionE" required></textarea>
                 </div>
+                <div class="col-12 col-md-10 p-0">
+                    <label class="form-label" for="fechaIni">Fecha de inicio</label>
+                    <input type="number" class="form-control" id="fechaIni" name="fechaIni"
+                        [(ngModel)]="educacion.fechaIni" min="2000" max="2023" required>
+                </div>
+                <div class="col-12 col-md-10 p-0">
+                    <label class="form-label" for="fechaFin">Fecha de finalización</label>
+                    <input type="number" class="form-control" id="fechaFin" name="fechaFin"
+                        [(ngModel)]="educacion.fechaFin" min="2009" max="2023" required>
+                </div>
+                <!-- <div class="p-0 col-12 col-md-10">
+                    <label for="fechaFin" class="form-label">Fecha de finalización</label>
+                    <select class="form-select" aria-label="select fechaFin" id="fechaFin"
+                        [(ngModel)]="educacion.fechaFin" required>
+                        <option selected disabled>Elija un año</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                    </select>
+                </div> -->
                 <button class="col-12 col-sm-3 btn btn-outline-warning mt-4">Editar</button>
             </form>
         </div>
