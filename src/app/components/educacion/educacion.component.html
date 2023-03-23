@@ -24,12 +24,16 @@
                         <div class="card-body" style="height: 100px;">
                             <h5 class="card-title">{{Educacion.nombreE}}</h5>
                             <p class="card-text">{{Educacion.descripcionE}}</p>
-                            <p class="card-text">{{Educacion.fechaIni}}</p>
-                            <p class="card-text">{{Educacion.fechaFin}}</p>
+                            <p class="card-text"></p>
+                            <p class="card-text"></p>
                         </div>
-                        <!-- Botones -->
-                        <div class="d-flex justify-content-end pb-lg-3 pe-lg-0 p-3" *ngIf="isLogged">
-                            <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                        <!-- Fechas y Botones -->
+                        <div class="d-flex justify-content-between align-items-center pb-lg-3 pe-lg-0 p-3 mt-4">
+                            <!-- Fechas -->
+                            <div>{{Educacion.fechaIni}} - {{Educacion.fechaFin}}</div>
+                            <!-- Botones -->
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Small button group"
+                                *ngIf="isLogged">
                                 <button type="button" class="btn btn-outline-warning"
                                     routerLink="/editedu/{{Educacion.id}}">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
