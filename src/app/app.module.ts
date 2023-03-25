@@ -28,6 +28,9 @@ import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.com
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { NewProyectoComponent } from './components/proyectos/new-proyecto.component';
 import { EditProyectoComponent } from './components/proyectos/edit-proyecto.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -59,7 +62,9 @@ import { EditProyectoComponent } from './components/proyectos/edit-proyecto.comp
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [interceptorProvider],
   bootstrap: [AppComponent]

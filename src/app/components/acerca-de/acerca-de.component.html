@@ -2,10 +2,10 @@
     <div class="bg-cover"></div>
     <div class="d-flex flex-column align-items-center">
         <figure class="foto-perfil">
-            <img src="../../../assets/homero.jpg" alt="foto-perfil">
+            <img src="{{persona?.img}}" alt="foto-perfil">
         </figure>
         <div class="title text-light text-center">
-            <h1 class="mb-3">{{persona.nombre}} {{persona.apellido}}</h1>
+            <h1 class="mb-3">{{persona?.nombre}} {{persona?.apellido}}</h1>
             <p><i><span class="tooltiptext">¿</span>Desarrollador web<span class="tooltiptext">?</span><br>No<span
                         class="tooltiptext">,</span> cobro por anticipado</i></p>
         </div>
@@ -20,10 +20,10 @@
 
         <div class="mb-3 col-12">
             <div class="d-flex align-items-center">
-                <p class="mb-0">{{persona.descripcion}}</p>
+                <p class="mb-0">{{persona?.descripcion}}</p>
                 <!-- Botones -->
                 <button type="button" class="btn btn-sm btn-outline-warning mb-md-4 mb-0 ms-4"
-                    routerLink="/editacerca/{{persona.id}}" *ngIf="isLogged">
+                    routerLink="/editacerca/{{persona?.id}}" *ngIf="isLogged">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-pencil" viewBox="0 0 16 16">
                         <path

@@ -25,12 +25,12 @@ export class AcercaDeComponent implements OnInit {
   }
 
   cargarPersona() {
-    this.persona = {
-      nombre: '-',
-      apellido: '-',
-      descripcion: '-',
-      img: '-'
-    };
+    // this.persona = {
+    //   nombre: '-',
+    //   apellido: '-',
+    //   descripcion: '-',
+    //   img: '-'
+    // };
     this.personaS.detail(1).subscribe(
       data => {
         this.persona = data;
