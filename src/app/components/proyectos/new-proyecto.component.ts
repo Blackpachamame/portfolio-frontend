@@ -12,6 +12,8 @@ export class NewProyectoComponent implements OnInit {
 
   nombre: string;
   descripcion: string;
+  img: string = "../../../assets/proyecto-default.jpg";
+  link: string;
 
   constructor(private proyectoS: ProyectoService, private router: Router) { }
 
@@ -19,7 +21,7 @@ export class NewProyectoComponent implements OnInit {
   }
 
   onCreate(): void {
-    const proyecto = new Proyecto(this.nombre, this.descripcion);
+    const proyecto = new Proyecto(this.nombre, this.descripcion, this.img, this.link);
     this.proyectoS.save(proyecto).subscribe(
       data => {
         alert("Proyecto añadido correctamente");

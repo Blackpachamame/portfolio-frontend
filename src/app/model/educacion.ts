@@ -4,11 +4,13 @@ export class Educacion {
     descripcionE: string;
     fechaIni: number;
     fechaFin: number;
+    img: string;
 
-    constructor(nombreE: string, descripcionE: string, fechaIni: number, fechaFin: number) {
+    constructor(nombreE: string, descripcionE: string, fechaIni: number, fechaFin: number, img: string) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
         this.fechaIni = fechaIni;
         this.fechaFin = fechaFin;
+        this.img = img;
     }
 }

@@ -14,7 +14,7 @@ Desarrollar una aplicación web full stack, que mostrará: tus datos personales,
 
 ## Tiempo de entrega ⏱
 
-La fecha límite de entrega del portfolio es la fecha de cierre del curso: **15 de enero del 2023**.
+La fecha límite de entrega del portfolio es la fecha de cierre del curso: **26 de marzo del 2023**.
 
 El curso fue diseñado en modalidad autogestionada. Esto quiere decir que cada participante puede realizarlo en el tiempo que desee y/o disponga, pero siempre dentro de la fecha límite. En la guía del participante les brindamos una organización por mes a modo de consejo, que creemos les ayudará a organizar sus tiempos y aprovechar su aprendizaje, pudiendo compartir con el resto de los participantes sus inquietudes en los foros de cada módulo e ir creciendo e interactuando al compartir sus resultados.
 
@@ -26,7 +26,7 @@ En cada Módulo irás apilando el conocimiento necesario, hasta llegar al módul
 
 Te invitamos a securizar tu portfolio web implementando JWT con Spring Boot y Angular.
 
-A continuación, te presentamos una guía que representa el esqueleto o estructura visual del portfolio web que deberás construir y subirlo a Heroku para dejarlo funcional y pueda ser revisado.
+A continuación, te presentamos una guía que representa el esqueleto o estructura visual del portfolio web que deberás construir y subirlo a Render para dejarlo funcional y pueda ser revisado.
 
 - Header
   - [Logo](#logo)

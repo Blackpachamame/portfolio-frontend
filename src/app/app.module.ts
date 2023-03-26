@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { RedesComponent } from './components/redes/redes.component';
-import { BienvenidaComponent } from './components/bienvenida/bienvenida.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
@@ -28,9 +27,9 @@ import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.com
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { NewProyectoComponent } from './components/proyectos/new-proyecto.component';
 import { EditProyectoComponent } from './components/proyectos/edit-proyecto.component';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
-import { provideStorage,getStorage } from '@angular/fire/storage';
+import { provideStorage, getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -38,7 +37,6 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     ToolbarComponent,
     ProyectosComponent,
     RedesComponent,
-    BienvenidaComponent,
     FooterComponent,
     SkillsComponent,
     EducacionComponent,

@@ -4,8 +4,11 @@
             class="col-lg-5 col-md-6 col-12 bg-dark text-white text-center rounded border-start border-end border-info border-2 border-opacity-25 p-5">
             <h4 class="fw-bold mb-4 text-uppercase">Agregar Proyecto</h4>
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm" class="row justify-content-center g-3">
-                <!-- <label for="imagenP" class="form-label">Seleccionar imagen previa</label>
-                    <input class="form-control" type="file" id="imagenP"> -->
+                <div class="col-12 col-md-10 p-0">
+                    <label class="form-label" for="img">Imagen</label>
+                    <input type="file" class="form-control" id="img" name="img" accept=".jpg, .jpeg, .png, .gif"
+                        disabled>
+                </div>
                 <div class="col-12 col-md-10 p-0">
                     <label class="form-label" for="nombre">Nombre</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
@@ -14,6 +17,10 @@
                     <label class="form-label" for="descripcion">Descripción</label>
                     <textarea class="form-control" id="descripcion" name="descripcion" [(ngModel)]="descripcion"
                         required></textarea>
+                </div>
+                <div class="col-12 col-md-10 p-0">
+                    <label class="form-label" for="link">Link</label>
+                    <input type="text" class="form-control" id="link" name="link" [(ngModel)]="link" required>
                 </div>
                 <button type="submit" class="col-12 col-md-6 col-lg-4 btn btn-outline-info mt-4">Agregar</button>
             </form>
