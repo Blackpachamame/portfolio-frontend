@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { Educacion } from 'src/app/model/educacion';
 import { EducacionService } from 'src/app/service/educacion.service';
-import { ImageService } from 'src/app/service/image.service';
 
 @Component({
   selector: 'app-new-educacion',
@@ -18,9 +17,7 @@ export class NewEducacionComponent implements OnInit {
   img: string = "../../../assets/logo-uncoma.png";
 
   constructor(private educacionS: EducacionService,
-    private activatedRouter: ActivatedRoute,
-    private router: Router,
-    public imageService: ImageService) { }
+    private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -36,12 +33,6 @@ export class NewEducacionComponent implements OnInit {
         this.router.navigate(['']);
       }
     )
-  }
-
-  uploadImage($event: any) {
-    const id = this.activatedRouter.snapshot.params['id'];
-    const name = "educacion" + id;
-    this.imageService.uploadImage($event, name);
   }
 
 }
